@@ -1,2 +1,3 @@
-# DigitalBazaar
-Mobile app allow use to sell their item with location share
+# Digital Bazaar
+### Isaac Yeo, Austin Vaday, Tarek Kabbara, Vu Cu, Zhengkai Zhang
+Est. 2017

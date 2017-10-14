@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_item_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.csm117.digitalbazaar.ItemView">
+
+    <TextView
+        android:text="Welcome,You can contact owner and pay you deal here."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/simpleLabel"
+        />
+
+    <EditText
+        android:layout_width="335dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:id="@+id/price"
+        android:hint="Price:"
+        android:layout_below="@+id/simpleLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="29dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/creditcardNumberEdit"
+        android:hint="Title:"
+        android:layout_below="@+id/simpleLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Map"
+        android:layout_width="90dp"
+        android:layout_height="52dp"
+        android:id="@+id/setting"
+        android:onClick="clickButtonGoToSetting"
+        android:backgroundTint="@android:color/holo_green_light"
+        android:layout_weight="0.05"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="160dp" />
+
+    <Button
+        android:text="pay"
+        android:layout_width="90dp"
+        android:layout_height="52dp"
+        android:id="@+id/Posting"
+        android:onClick="clickButtonGoToPosting"
+        android:backgroundTint="@android:color/holo_purple"
+        android:layout_weight="0.05"
+        android:layout_alignBaseline="@+id/setting"
+        android:layout_alignBottom="@+id/setting"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp" />
+
+    <Button
+        android:text="Message"
+        android:layout_width="90dp"
+        android:layout_height="52dp"
+        android:id="@+id/message"
+        android:onClick="clickButtonGoToMessages"
+        android:backgroundTint="@android:color/holo_orange_light"
+        android:layout_weight="0.05"
+        android:layout_alignBaseline="@+id/setting"
+        android:layout_alignBottom="@+id/setting"
+        android:layout_alignRight="@+id/price"
+        android:layout_alignEnd="@+id/price" />
+
+    <TextView
+        android:text="Message Enter Below:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/titleLabel"
+        android:layout_below="@+id/price"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textCapSentences|textAutoCorrect"
+        android:id="@+id/description"
+        android:hint="Message:"
+        android:layout_weight="0.75"
+        android:layout_below="@+id/titleLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="12dp" />
+</RelativeLayout>

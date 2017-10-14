@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">DigitalBazaar</string>
+    <string name="facebook_app_id">1155738304474810</string>
+    <string name="fb_login_protocol_scheme">fb1155738304474810</string>
+    <string name="facebook_status_fmt">Facebook Status FMT</string>
+    <string name="firebase_status_fmt">Firebase Status FMT</string>
+    <string name="signed_out">Signed Out</string>
+    <string name="title_activity_verification">Verification</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_my_location">My Location</string>
+</resources>

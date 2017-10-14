@@ -1,0 +1,141 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+
+        android:id="@+id/postTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/editText"
+        android:layout_marginTop="15dp"
+        android:text="Title"
+        android:textColor="@color/com_smart_login_code"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="Price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/postPrice"
+        android:layout_below="@+id/editText"
+        android:layout_alignLeft="@+id/postDescription"
+        android:layout_alignStart="@+id/postDescription"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    <TextView
+        android:text="DescriptionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/postDescription"
+        android:layout_below="@+id/editText3"
+        android:layout_alignLeft="@+id/editText3"
+        android:layout_alignStart="@+id/editText3"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/postUserId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:text="UserId"
+        android:visibility="invisible"
+        android:layout_below="@+id/editText3"
+        android:layout_alignLeft="@+id/postDescription"
+        android:layout_alignStart="@+id/postDescription" />
+
+    <Button
+        android:text="Message"
+        android:layout_width="90dp"
+        android:layout_height="52dp"
+        android:id="@+id/post_description"
+        android:onClick="clickButtonGoToMessages"
+        android:backgroundTint="@android:color/holo_orange_light"
+        android:layout_weight="0.05"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_alignBaseline="@+id/Posting"
+        android:layout_alignBottom="@+id/Posting"
+        android:layout_toRightOf="@+id/setting"
+        android:layout_toEndOf="@+id/setting" />
+
+    <Button
+        android:text="Map"
+        android:layout_width="90dp"
+        android:layout_height="52dp"
+        android:id="@+id/setting"
+        android:onClick="clickButtonGoToMaps"
+        android:backgroundTint="@android:color/holo_green_light"
+        android:layout_weight="0.05"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp"
+        android:layout_alignBaseline="@+id/Posting"
+        android:layout_alignBottom="@+id/Posting"
+        android:layout_toRightOf="@+id/Posting"
+        android:layout_toEndOf="@+id/Posting" />
+
+    <ImageView
+        android:id="@+id/postImageText"
+        android:layout_width="260dp"
+        android:layout_height="150dp"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        android:text="Image"
+        android:layout_marginTop="26dp"
+        android:layout_below="@+id/postUserId"
+        android:layout_alignLeft="@+id/editText3"
+        android:layout_alignStart="@+id/editText3" />
+
+    <Button
+        android:text="Buy"
+        android:layout_width="90dp"
+        android:layout_height="52dp"
+        android:id="@+id/Posting"
+        android:onClick="clickButtonGoToBuy"
+        android:backgroundTint="@android:color/holo_purple"
+        android:layout_weight="0.05"
+        android:layout_marginTop="21dp"
+        android:layout_below="@+id/postImageText"
+        android:layout_alignLeft="@+id/postUserId"
+        android:layout_alignStart="@+id/postUserId" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/postTitle"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="11dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Price"
+        android:textSize="15sp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Description"
+        android:textSize="15sp"
+        android:layout_below="@+id/postPrice"
+        android:layout_alignLeft="@+id/editText"
+        android:layout_alignStart="@+id/editText"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>

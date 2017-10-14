@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_posting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.csm117.digitalbazaar.Posting">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:text="Welcome,here you can post your item for sell.
+Don't violate the rule of our posting policy. Thanks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/simpleLabel"
+            />
+
+        <EditText
+            android:layout_width="335dp"
+            android:layout_height="wrap_content"
+            android:inputType="textCapSentences|textAutoCorrect"
+            android:id="@+id/topic"
+            android:hint="Title of your Post:" />
+        <EditText
+            android:layout_width="335dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:id="@+id/price"
+            android:hint="Price:" />
+        <TextView
+            android:text="Description of item:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/titleLabel" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapSentences|textAutoCorrect"
+            android:id="@+id/description"
+            android:hint=""
+            android:layout_weight="0.74" />
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/imageToupload"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="#FFFFFF"
+            android:visibility="visible"
+            android:src="@mipmap/ic_launcher" />
+
+        <Button
+            android:id="@+id/bUploadImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="UPLOAD IMAGE"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:layout_marginTop="10dp"
+            />
+        <Button
+            android:text="Post"
+            android:layout_width="90dp"
+            android:layout_height="52dp"
+            android:id="@+id/post"
+            android:onClick="Setdata"
+            android:backgroundTint="@android:color/holo_green_dark"
+            android:layout_weight="0.05" />
+
+        <TextView
+            android:text="You will get messages from other user who interesting in your iterm!"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/label2" />
+
+    </LinearLayout>
+</RelativeLayout>
